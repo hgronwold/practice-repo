@@ -19,3 +19,4 @@ library("ISOweek")
 ```{r import_data, include=FALSE}
 QData <- read.csv("~/OneDrive - purdue.edu/Coursework/Absenteeism - John Deere/HarvesterWorksQualityData.csv")
 ```
+head(QData)
