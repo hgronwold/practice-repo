@@ -1,0 +1,21 @@
+---
+title: "Quality Data + Absenteeism"
+author: "JD Absenteeism"
+date: "2/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning = FALSE)
+library(dplyr)
+library(ggplot2)
+library(readxl) #read excel
+library(lubridate) #extracting weekday
+library(forecast) #auto.arima 
+library(corrplot) #corr heatmap
+library("ISOweek")
+```
+
+```{r import_data, include=FALSE}
+QData <- read.csv("~/OneDrive - purdue.edu/Coursework/Absenteeism - John Deere/HarvesterWorksQualityData.csv")
+```
